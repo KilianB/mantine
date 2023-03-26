@@ -1,0 +1,6 @@
+import { MantineDemo } from '@mantine/ds';
+export declare const go = "\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n    ch := make(chan float64)\n    ch <- 1.0e10    // magic number\n    x, ok := <- ch\n    defer fmt.Println(`exitting now`)\n    go println(len(\"hello world!\"))\n    return\n}\n";
+export declare const py = "\n@requires_authorization\ndef somefunc(param1='', param2=0):\n    r'''A docstring'''\n    if param1 > param2: # interesting\n        print 'Gre\\'ater'\n    return (param2 - param1 + 1 + 0b10l) or None\n\nclass SomeClass:\n    pass\n\n>>> message = '''interpreter\n... prompt'''\n";
+export declare const css = "\n@font-face {\n  font-family: Chunkfive; src: url('Chunkfive.otf');\n}\n\nbody, .usertext {\n  color: #F0F0F0; background: #600;\n  font-family: Chunkfive, sans;\n  --heading-1: 2rem/2rem Helvetica, sans-serif;\n}\n\n@import url(print.css);\n\n@media print {\n  a[href^=http]::after {\n    content: attr(href)\n  }\n}\n";
+export declare const languages: MantineDemo;
+//# sourceMappingURL=Prism.demo.languages.d.ts.map
